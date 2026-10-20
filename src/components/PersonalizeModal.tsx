@@ -85,7 +85,7 @@ export const PersonalizeModal: React.FC<PersonalizeModalProps> = ({
               type="text"
               value={recipientName}
               onChange={(e) => setRecipientName(e.target.value)}
-              placeholder="VD: Bà và Mẹ, Mẹ kính yêu, Cô Lan, Thím Mai, Em gái..."
+              placeholder="VD: Vợ yêu, Bà và Mẹ, Mẹ kính yêu, Cô Lan, Thím Mai, Em gái..."
               maxLength={50}
               className="w-full px-4 py-2.5 rounded-xl border border-[var(--line)] bg-white text-[var(--ink)] focus:outline-none focus:ring-2 focus:ring-[var(--rose)] text-sm transition-all"
             />
@@ -99,7 +99,7 @@ export const PersonalizeModal: React.FC<PersonalizeModalProps> = ({
               type="text"
               value={senderName}
               onChange={(e) => setSenderName(e.target.value)}
-              placeholder="VD: Vũ Mạnh Quang, Con trai Quang, Cháu Quang..."
+              placeholder="VD: Vũ Mạnh Quang, Chồng yêu, Con trai Quang, Cháu Quang..."
               maxLength={50}
               className="w-full px-4 py-2.5 rounded-xl border border-[var(--line)] bg-white text-[var(--ink)] focus:outline-none focus:ring-2 focus:ring-[var(--rose)] text-sm transition-all"
             />
@@ -110,7 +110,7 @@ export const PersonalizeModal: React.FC<PersonalizeModalProps> = ({
             <label className="block text-xs font-semibold text-[var(--rose-deep)] uppercase tracking-wider mb-2">
               Chọn mẫu thư gia đình
             </label>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
               {LETTER_PRESETS.map((preset) => {
                 const active = currentPreset.id === preset.id;
                 return (

@@ -62,7 +62,7 @@ export const Cover: React.FC<CoverProps> = ({
               Kính gửi <b className="font-['Dancing_Script',cursive] text-[1.45em] text-[var(--rose)] font-bold">{recipientName}</b>
             </>
           ) : (
-            'Kính gửi bà, mẹ, các cô, các thím và các em trong gia đình'
+            'Kính gửi bà, mẹ, vợ yêu, các cô, các thím và các em trong gia đình'
           )}
         </p>
 

@@ -1,6 +1,6 @@
 /**
  * Database of 20/10 wishes & presets customized for family by Vũ Mạnh Quang
- * Không có chị, chỉ có bà, mẹ, các cô, các thím và các em gái
+ * Bao gồm: Bà, Mẹ, Vợ yêu, các Cô, các Thím và các Em gái
  */
 
 export interface WishCategory {
@@ -11,6 +11,7 @@ export interface WishCategory {
 
 export const WISH_CATEGORIES: WishCategory[] = [
   { id: 'all', label: 'Tất cả gia đình', shortLabel: 'gia đình' },
+  { id: 'wife', label: 'Vợ yêu ❤️', shortLabel: 'vợ yêu' },
   { id: 'grandma_mom', label: 'Bà & Mẹ yêu', shortLabel: 'bà & mẹ' },
   { id: 'aunt', label: 'Cô & Thím', shortLabel: 'cô & thím' },
   { id: 'sisters', label: 'Các Em gái', shortLabel: 'các em gái' },
@@ -19,6 +20,13 @@ export const WISH_CATEGORIES: WishCategory[] = [
 ];
 
 export const WISH_DATA: Record<string, string[]> = {
+  wife: [
+    'Chúc vợ yêu của anh ngày 20/10 ngập tràn niềm vui, luôn xinh đẹp, rạng rỡ và hạnh phúc bên anh và gia đình nhỏ của chúng mình.',
+    'Cảm ơn vợ đã luôn đồng hành, chăm sóc và vun vén tổ ấm gia đình. Với anh, nụ cười của vợ chính là sự bình yên lớn nhất.',
+    'Chúc vợ yêu mãi luôn tươi trẻ, cười tươi mỗi ngày, mọi mệt mỏi đều tan biến và nhận được thật nhiều hoa, nhiều quà từ anh nhé!',
+    'Thế giới có muôn vạn đóa hoa, nhưng vợ luôn là bông hoa đẹp nhất, ngọt ngào nhất trong trái tim anh. Yêu vợ rất nhiều ❤️',
+    'Nhân ngày 20/10, anh chúc người bạn đời tuyệt vời của anh luôn vui vẻ, an yên. Anh hứa sẽ luôn yêu thương, chia sẻ và chở che cho em!',
+  ],
   grandma_mom: [
     'Con chúc Bà và Mẹ luôn dồi dào sức khỏe, sống vui, sống khỏe bên con cháu, lúc nào cũng an yên và hạnh phúc.',
     'Nhân ngày 20/10, con xin cảm ơn Bà và Mẹ vì đã luôn hy sinh, chăm lo từng bữa ăn giấc ngủ và dành trọn tình yêu thương vô bờ bến cho gia đình.',
@@ -39,15 +47,15 @@ export const WISH_DATA: Record<string, string[]> = {
     'Chúc các em luôn tự tin, duyên dáng, luôn tìm thấy niềm vui và hạnh phúc trọn vẹn trong cuộc sống.',
   ],
   family: [
-    'Nhân ngày 20/10, xin kính chúc tất cả các bà, mẹ, các cô, các thím và các em trong gia đình luôn bình an, mạnh khỏe và ngập tràn hạnh phúc!',
-    'Những người phụ nữ trong gia đình mình chính là những bông hoa rực rỡ và quý giá nhất. Cảm ơn mọi người đã luôn gìn giữ ngọn lửa yêu thương cho tổ ấm!',
+    'Nhân ngày 20/10, xin kính chúc bà, mẹ, vợ yêu, các cô, các thím và các em trong gia đình luôn bình an, mạnh khỏe và ngập tràn hạnh phúc!',
+    'Những người phụ nữ trong gia đình mình - từ bà, mẹ, vợ yêu đến các cô, các thím và các em gái - chính là những bông hoa rực rỡ và quý giá nhất. Cảm ơn mọi người đã luôn gìn giữ ngọn lửa yêu thương cho tổ ấm!',
     'Chúc cho đại gia đình chúng ta mãi luôn đoàn kết, sum vầy ấm cúng, tiếng cười rộn rã khắp nhà và tràn ngập niềm vui mỗi ngày.',
-    'Gửi ngàn lời chúc tốt đẹp nhất đến toàn thể bà, mẹ, các cô, các thím và các em gái nhân ngày 20/10!',
+    'Gửi ngàn lời chúc tốt đẹp nhất đến toàn thể bà, mẹ, vợ yêu, các cô, các thím và các em gái nhân ngày 20/10!',
   ],
   poem: [
-    'Tháng mười gió nhẹ thu sang,\nGia đình sum họp rộn ràng yêu thương.\nBà, mẹ tần tảo sớm sương,\nCô, thím đằm thắm vấn vương nghĩa tình.\nCác em rạng rỡ tươi xinh,\nTrọn đời hạnh phúc, an bình ấm êm.',
-    'Ơn bà, nghĩa mẹ mênh mông,\nThím, cô đùm bọc thấu lòng cháu con.\nChúc người phơi phới sắc son,\nNụ cười rạng rỡ, vuông tròn niềm vui.',
-    'Hôm nay ngày hội chúc mừng,\nCháu con gửi trọn tấc lòng kính yêu.\nChúc bà, chúc mẹ trăm điều,\nCô, thím vui vẻ, các em rạng ngời!',
+    'Tháng mười gió nhẹ thu sang,\nGia đình sum họp rộn ràng yêu thương.\nBà, mẹ tần tảo sớm sương,\nVợ hiền thấu hiểu, sắt son nghĩa tình.\nCô, thím đằm thắm tươi xinh,\nCác em rạng rỡ, an bình ấm êm.',
+    'Ơn bà, nghĩa mẹ mênh mông,\nVợ yêu gắn bó một lòng thủy chung.\nThím, cô hòa thuận bao dung,\nCác em vui vẻ tương phùng sắc hoa.',
+    'Hôm nay ngày hội chúc mừng,\nCháu con gửi trọn tấc lòng kính yêu.\nChúc bà, chúc mẹ trăm điều,\nVợ hiền, cô, thím, muôn phần hân hoan!',
   ],
 };
 
@@ -56,7 +64,9 @@ export function getPersonalizedWish(category: string, recipientName?: string): s
   const wish = pool[Math.floor(Math.random() * pool.length)];
   if (!recipientName) return wish;
   return wish.replace(/các bà, mẹ, các cô, các thím và các em/g, recipientName)
+             .replace(/bà, mẹ, vợ yêu, các cô, các thím và các em/g, recipientName)
              .replace(/Bà và Mẹ/g, recipientName)
+             .replace(/vợ yêu/g, recipientName)
              .replace(/các cô, các thím/g, recipientName)
              .replace(/các em gái/g, recipientName);
 }
@@ -79,24 +89,44 @@ export interface LetterPreset {
 export const LETTER_PRESETS: LetterPreset[] = [
   {
     id: 'family-all',
-    label: 'Cả nhà (Bà, Mẹ, Cô, Thím, Em)',
-    to: 'bà, mẹ, các cô, các thím và các em gái thân yêu',
+    label: 'Cả nhà (Bà, Mẹ, Vợ, Cô, Thím, Em)',
+    to: 'bà, mẹ, vợ yêu, các cô, các thím và các em gái thân yêu',
     from: 'Vũ Mạnh Quang',
     badge: 'Vũ Mạnh Quang kính chúc',
-    greeting: 'Kính gửi bà, mẹ, các cô, các thím và các em thân yêu trong gia đình,',
+    greeting: 'Kính gửi bà, mẹ, vợ yêu, các cô, các thím và các em thân yêu trong gia đình,',
     intro:
-      'Nhân ngày Phụ nữ Việt Nam 20/10, con/cháu/anh xin gửi tới bà, mẹ, các cô, các thím, cùng toàn thể các em những lời chúc mừng ấm áp và chân thành nhất từ tận đáy lòng.',
+      'Nhân ngày Phụ nữ Việt Nam 20/10, con/cháu/chồng/anh xin gửi tới bà, mẹ, vợ yêu, các cô, các thím, cùng toàn thể các em những lời chúc mừng ấm áp và chân thành nhất từ tận đáy lòng.',
     highlight:
-      'Cảm ơn bà và mẹ đã tần tảo hy sinh cả đời vì con cháu; cảm ơn các cô, các thím đã luôn chu đáo, vun vén tình cảm cho đại gia đình; và cảm ơn các em đã luôn mang lại tiếng cười, niềm vui rộn rã mỗi dịp sum vầy. Mọi người chính là những ngọn lửa ấm áp nhất sưởi ấm mái nhà chung của chúng ta.',
+      'Cảm ơn bà và mẹ đã tần tảo hy sinh cả đời vì con cháu; cảm ơn vợ hiền đã luôn đồng hành, cùng anh vun vén tổ ấm nhỏ đong đầy yêu thương; cảm ơn các cô, các thím đã luôn chu đáo, gắn kết đại gia đình; và cảm ơn các em đã luôn mang lại tiếng cười, niềm vui rộn rã mỗi dịp sum vầy. Mọi người chính là những ngọn lửa ấm áp nhất sưởi ấm mái nhà chung của chúng ta.',
     poem: [
       { l6: 'Tháng mười gió nhẹ thu sang,', l8: 'Gia đình sum họp rộn ràng yêu thương.' },
-      { l6: 'Bà, mẹ tần tảo sớm sương,', l8: 'Cô, thím đằm thắm vấn vương nghĩa tình.' },
-      { l6: 'Các em rạng rỡ tươi xinh,', l8: 'Trọn đời hạnh phúc, an bình ấm êm.' },
+      { l6: 'Bà, mẹ tần tảo sớm sương,', l8: 'Vợ hiền thấu hiểu, sắt son nghĩa tình.' },
+      { l6: 'Cô, thím đằm thắm tươi xinh,', l8: 'Các em rạng rỡ, an bình ấm êm.' },
     ],
     closing:
-      'Con kính chúc bà luôn sống lâu trăm tuổi, chúc mẹ, các cô, các thím luôn dồi dào sức khoẻ, trẻ đẹp, an yên; và chúc các em luôn rạng rỡ, may mắn, học tập và công tác thật tốt, luôn là niềm tự hào của gia đình!',
+      'Con kính chúc bà luôn sống lâu trăm tuổi; chúc mẹ, các cô, các thím luôn dồi dào sức khoẻ, trẻ đẹp, an yên; chúc vợ yêu mãi rạng ngời, hạnh phúc; và chúc các em luôn tươi vui, may mắn, học tập và công tác thật tốt, luôn là niềm tự hào của gia đình!',
     signature1: 'Vũ Mạnh Quang',
     signature2: 'Gia đình yêu thương · 20/10/2026',
+  },
+  {
+    id: 'wife-special',
+    label: 'Gửi Vợ yêu ❤️',
+    to: 'Vợ yêu của anh',
+    from: 'Chồng yêu',
+    badge: 'Dành riêng cho Vợ yêu',
+    greeting: 'Gửi vợ yêu - bông hoa đẹp nhất của anh,',
+    intro:
+      'Nhân ngày Phụ nữ Việt Nam 20/10, anh muốn gửi đến vợ những lời chúc ngọt ngào nhất cùng tất cả tình yêu thương chân thành từ trái tim.',
+    highlight:
+      'Cảm ơn em vì đã cùng anh xây đắp mái ấm, vì những bữa cơm gia đình thơm lừng, những quan tâm dịu dàng và sự thấu hiểu thầm lặng mỗi ngày. Có em bên cạnh là món quà tuyệt vời nhất trong cuộc đời anh.',
+    poem: [
+      { l6: 'Tháng mười gió nhẹ vờn bay,', l8: 'Thương em ánh mắt đong đầy yêu thương.' },
+      { l6: 'Cùng em đi suốt chặng đường,', l8: 'Trọn đời gắn kết, vấn vương nghĩa tình.' },
+    ],
+    closing:
+      'Chúc vợ yêu ngày 20/10 thật nhiều niềm vui, luôn xinh đẹp, rạng rỡ và an tâm rằng anh sẽ luôn là chỗ dựa vững chãi, luôn yêu thương và bảo vệ em mỗi ngày. Yêu em rất nhiều!',
+    signature1: 'Chồng của em ❤️',
+    signature2: '20/10/2026',
   },
   {
     id: 'grandma-mom',

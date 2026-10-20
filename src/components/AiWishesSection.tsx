@@ -108,7 +108,7 @@ export const AiWishesSection: React.FC<AiWishesSectionProps> = ({
   };
 
   const currentCategoryObj = WISH_CATEGORIES.find((c) => c.id === activeCategory) || WISH_CATEGORIES[0];
-  const targetRecipientLabel = recipientName || 'bà, mẹ, cô, thím, các em';
+  const targetRecipientLabel = recipientName || 'bà, mẹ, vợ yêu, cô, thím, các em';
 
   return (
     <section ref={sectionRef} id="ai" className="relative py-24 px-5 bg-[var(--bg-2)] overflow-hidden">
@@ -122,7 +122,7 @@ export const AiWishesSection: React.FC<AiWishesSectionProps> = ({
             Lời chúc gửi trọn yêu thương
           </h2>
           <p className="text-[var(--ink-soft)] text-base sm:text-lg leading-relaxed mb-6">
-            Chọn một chủ đề yêu thương, những câu chúc chân thành nhất sẽ được gửi gắm tới bà, mẹ, các cô, các thím và các em trong gia đình.
+            Chọn một chủ đề yêu thương, những câu chúc chân thành nhất sẽ được gửi gắm tới bà, mẹ, vợ yêu, các cô, các thím và các em trong gia đình.
           </p>
 
           {/* Chips */}

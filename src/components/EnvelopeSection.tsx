@@ -32,7 +32,8 @@ export const EnvelopeSection: React.FC<EnvelopeSectionProps> = ({
     : preset.greeting;
 
   const introText = recipientName
-    ? preset.intro.replace(/bà, mẹ, các cô, các thím, cùng toàn thể các em/g, recipientName)
+    ? preset.intro.replace(/bà, mẹ, vợ yêu, các cô, các thím, cùng toàn thể các em/g, recipientName)
+                  .replace(/bà, mẹ, các cô, các thím, cùng toàn thể các em/g, recipientName)
                   .replace(/bà, mẹ, các cô, các thím và các em/g, recipientName)
     : preset.intro;
 
@@ -51,7 +52,7 @@ export const EnvelopeSection: React.FC<EnvelopeSectionProps> = ({
           Gửi những người phụ nữ yêu thương trong gia đình
         </h2>
         <p className="max-w-[660px] mx-auto text-[var(--ink-soft)] text-base sm:text-lg leading-relaxed">
-          Nhân ngày 20/10, con/cháu/anh xin gửi trọn tấm lòng biết ơn, sự kính trọng và thương yêu sâu sắc nhất tới bà, mẹ, các cô, các thím và các em gái. Mời mọi người mở lá thư này nhé!
+          Nhân ngày 20/10, con/cháu/chồng/anh xin gửi trọn tấm lòng biết ơn, sự kính trọng và thương yêu sâu sắc nhất tới bà, mẹ, vợ yêu, các cô, các thím và các em gái. Mời mọi người mở lá thư này nhé!
         </p>
 
         {/* 3D Folding Envelope */}
@@ -73,7 +74,7 @@ export const EnvelopeSection: React.FC<EnvelopeSectionProps> = ({
           <div className="env-card leading-tight">
             Kính gửi
             <br />
-            {recipientName ? recipientName : 'Bà, Mẹ, Cô, Thím & Chị Em'}
+            {recipientName ? recipientName : 'Bà, Mẹ, Vợ yêu, Cô, Thím & Các Em'}
           </div>
           <div className="env-front" />
           <div className="env-flap" />
