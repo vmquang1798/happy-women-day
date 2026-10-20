@@ -1,0 +1,6 @@
+{
+  "name": "Thiệp 20/10 - Vũ Mạnh Quang Kính Chúc Gia Đình",
+  "description": "Thiệp chúc mừng 20/10 của Vũ Mạnh Quang gửi tới bà, mẹ, các cô, các thím và các em - những người phụ nữ tuyệt vời trong gia đình.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
